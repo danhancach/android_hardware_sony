@@ -16,12 +16,16 @@
 
 #pragma once
 
+#include <aidl/google/hardware/power/extension/pixel/BnPowerExt.h>
+#include <perfmgr/HintManager.h>
+
 #include <atomic>
 #include <memory>
 #include <thread>
 
 #include <aidl/google/hardware/power/extension/pixel/BnPowerExt.h>
 #include <perfmgr/HintManager.h>
+#include "adaptivecpu/AdaptiveCpu.h"
 
 namespace aidl {
 namespace google {
@@ -34,7 +38,8 @@ using ::android::perfmgr::HintManager;
 
 class PowerExt : public ::aidl::google::hardware::power::extension::pixel::BnPowerExt {
   public:
-    PowerExt(std::shared_ptr<HintManager> hm) : mHintManager(hm) {}
+    PowerExt(std::shared_ptr<HintManager> hm, std::shared_ptr<AdaptiveCpu> acpu)
+        : mHintManager(hm), mAdaptiveCpu(acpu) {}
     ndk::ScopedAStatus setMode(const std::string &mode, bool enabled) override;
     ndk::ScopedAStatus isModeSupported(const std::string &mode, bool *_aidl_return) override;
     ndk::ScopedAStatus setBoost(const std::string &boost, int32_t durationMs) override;
@@ -42,6 +47,7 @@ class PowerExt : public ::aidl::google::hardware::power::extension::pixel::BnPow
 
   private:
     std::shared_ptr<HintManager> mHintManager;
+    std::shared_ptr<AdaptiveCpu> mAdaptiveCpu;
 };
 
 }  // namespace pixel

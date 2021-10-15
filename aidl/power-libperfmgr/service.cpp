@@ -53,12 +53,13 @@ int main() {
     // single thread
     ABinderProcess_setThreadPoolMaxThreadCount(0);
 
+    std::shared_ptr<AdaptiveCpu> adaptiveCpu = std::make_shared<AdaptiveCpu>(hm);
     // core service
     std::shared_ptr<Power> pw = ndk::SharedRefBase::make<Power>(hm);
     ndk::SpAIBinder pwBinder = pw->asBinder();
 
     // extension service
-    std::shared_ptr<PowerExt> pwExt = ndk::SharedRefBase::make<PowerExt>(hm);
+    std::shared_ptr<PowerExt> pwExt = ndk::SharedRefBase::make<PowerExt>(hm, adaptiveCpu);
 
     // attach the extension to the same binder we will be registering
     CHECK(STATUS_OK == AIBinder_setExtension(pwBinder.get(), pwExt->asBinder().get()));

@@ -379,9 +379,7 @@ ndk::ScopedAStatus PowerHintSession::reportActualWorkDuration(
         }
     }
 
-    if (mAdaptiveCpu) {
-        mAdaptiveCpu->ReportWorkDurations(actualDurations, mDescriptor->duration);
-    }
+    mAdaptiveCpu->ReportWorkDurations(actualDurations, mDescriptor->duration);
 
     return ndk::ScopedAStatus::ok();
 }
