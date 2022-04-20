@@ -20,6 +20,7 @@
 
 #include <android-base/logging.h>
 #include <android-base/properties.h>
+#include <android/binder_ibinder_platform.h>
 #include <android/binder_manager.h>
 #include <android/binder_process.h>
 
@@ -57,9 +58,12 @@ int main() {
     // core service
     std::shared_ptr<Power> pw = ndk::SharedRefBase::make<Power>(hm);
     ndk::SpAIBinder pwBinder = pw->asBinder();
+    AIBinder_setMinSchedulerPolicy(pwBinder.get(), SCHED_NORMAL, -20);
 
     // extension service
     std::shared_ptr<PowerExt> pwExt = ndk::SharedRefBase::make<PowerExt>(hm, adaptiveCpu);
+    auto pwExtBinder = pwExt->asBinder();
+    AIBinder_setMinSchedulerPolicy(pwExtBinder.get(), SCHED_NORMAL, -20);
 
     // attach the extension to the same binder we will be registering
     CHECK(STATUS_OK == AIBinder_setExtension(pwBinder.get(), pwExt->asBinder().get()));
