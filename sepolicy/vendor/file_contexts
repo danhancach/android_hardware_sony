@@ -1,0 +1,1 @@
+/(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor\.sony\.charger-service                  u:object_r:hal_sony_charger_default_exec:s0

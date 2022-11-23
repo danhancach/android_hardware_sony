@@ -1,1 +1,2 @@
 binder_call(system_app, hal_disp_default)
+binder_call(system_app, hal_sony_charger_default)
