@@ -1,0 +1,3 @@
+# Battery
+genfscon sysfs /class/battchg_ext u:object_r:sysfs_battchg_ext:s0
+genfscon sysfs /class/battman_dbg u:object_r:sysfs_battchg_ext:s0
