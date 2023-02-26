@@ -10,7 +10,7 @@ import android.hardware.display.ColorDisplayManager
 import android.provider.Settings
 import android.util.Log
 
-import lineageos.hardware.LiveDisplayManager
+import com.android.internal.custom.hardware.LiveDisplayManager
 
 import vendor.semc.hardware.display.V2_0.IDisplay
 import vendor.semc.hardware.display.V2_0.IDisplayCallback
