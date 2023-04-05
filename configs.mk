@@ -16,3 +16,6 @@
 
 # SEPolicy
 BOARD_VENDOR_SEPOLICY_DIRS += hardware/sony/sepolicy/vendor
+
+# build dolby
+$(call inherit-product, hardware/sony/dolby/dolby.mk)
