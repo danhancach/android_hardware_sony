@@ -103,7 +103,6 @@
         "1 => 587000000"
       ],
       "DefaultIndex": 0,
-      "ResetOnInit": true
     },
     {
       "Name": "GPUMinFreq",
@@ -125,8 +124,7 @@
         "4 => 441600000",
         "5 => 400000000",
         "6 => 305000000"
-      ],
-      "ResetOnInit": true
+      ]
     },
     {
       "Name": "GPUForceRailOn",
@@ -134,8 +132,7 @@
       "Values": [
         "1",
         "0"
-      ],
-      "ResetOnInit": true
+      ]
     },
     {
       "Name": "GPUForceClkOn",
@@ -143,8 +140,7 @@
       "Values": [
         "1",
         "0"
-      ],
-      "ResetOnInit": true
+      ]
     },
     {
       "Name": "GPUIdleTimer",
@@ -152,8 +148,7 @@
       "Values": [
         "10000",
         "80"
-      ],
-      "ResetOnInit": true
+      ]
     },
     {
       "Name": "TASchedtuneBoost",
@@ -170,8 +165,7 @@
       "Values": [
         "0",
         "3"
-      ],
-      "ResetOnInit": true
+      ]
     },
     {
       "Name": "CPUBWHistMemory",
@@ -179,8 +173,7 @@
       "Values": [
         "0",
         "20"
-      ],
-      "ResetOnInit": true
+      ]
     },
     {
       "Name": "CPUBWHystLength",
@@ -188,8 +181,7 @@
       "Values": [
         "0",
         "10"
-      ],
-      "ResetOnInit": true
+      ]
     },
     {
       "Name": "CPUBWSampleMs",
@@ -197,8 +189,7 @@
       "Values": [
         "10",
         "4"
-      ],
-      "ResetOnInit": true
+      ]
     },
     {
       "Name": "CPUBWIOPercent",
@@ -206,8 +197,7 @@
       "Values": [
         "80",
         "34"
-      ],
-      "ResetOnInit": true
+      ]
     },
     {
       "Name": "CPUBWMinFreq",
@@ -216,8 +206,7 @@
         "14236",
         "9155",
         "2288"
-      ],
-      "ResetOnInit": true
+      ]
     },
     {
       "Name": "LLCCBWMinFreq",
@@ -226,8 +215,7 @@
         "6881",
         "2597",
         "762"
-      ],
-      "ResetOnInit": true
+      ]
     },
     {
       "Name": "LLCCBWSampleMs",
@@ -235,8 +223,7 @@
       "Values": [
         "10",
         "4"
-      ],
-      "ResetOnInit": true
+      ]
     },
     {
       "Name": "LLCCBWHystLength",
@@ -244,8 +231,7 @@
       "Values": [
         "0",
         "10"
-      ],
-      "ResetOnInit": true
+      ]
     },
     {
       "Name": "L3LittleClusterMinFreq",
@@ -253,8 +239,7 @@
       "Values": [
         "1612800000",
         "300000000"
-      ],
-      "ResetOnInit": true
+      ]
     },
     {
       "Name": "LLCCBWHystTriggerCount",
@@ -262,8 +247,7 @@
       "Values": [
         "0",
         "3"
-      ],
-      "ResetOnInit": true
+      ]
     },
     {
       "Name": "L3BigClusterMinFreq",
@@ -271,8 +255,7 @@
       "Values": [
         "1612800000",
         "300000000"
-      ],
-      "ResetOnInit": true
+      ]
     },
     {
       "Name": "L3BigPlusClusterMinFreq",
@@ -280,8 +263,7 @@
       "Values": [
         "1612800000",
         "300000000"
-      ],
-      "ResetOnInit": true
+      ]
     },
     {
       "Name": "PMQoSCpuDmaLatency",
