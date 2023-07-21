@@ -1,3 +1,1 @@
-type sysfs_battchg_ext, fs_type, sysfs_type;
-
 type vendor_dolby_data_file, file_type, data_file_type;

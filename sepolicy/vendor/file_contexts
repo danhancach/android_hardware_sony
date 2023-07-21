@@ -1,1 +1,4 @@
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor\.sony\.charger-service                  u:object_r:hal_sony_charger_default_exec:s0
+
+/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service    u:object_r:hal_dms_default_exec:s0
+/data/vendor/dolby(/.*)?    u:object_r:vendor_dolby_data_file:s0
