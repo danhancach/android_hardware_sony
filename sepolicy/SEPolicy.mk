@@ -1,0 +1,3 @@
+LOCAL_SEPOLICY := hardware/sony/sepolicy
+
+BOARD_VENDOR_SEPOLICY_DIRS += $(LOCAL_SEPOLICY)/vendor
