@@ -48,6 +48,15 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
+prebuilt_etc_xml {
+	name: "vendor.dolby.media.c2@1.0-service",
+	owner: "sony",
+	src: "codec2/vendor/etc/vintf/manifest/vendor.dolby.media.c2@1.0-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
 dex_import {
 	name: "com.motorola.frameworks.core.addon",
 	owner: "sony",
