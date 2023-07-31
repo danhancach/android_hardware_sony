@@ -4,3 +4,6 @@
 /data/vendor/dolby(/.*)?    u:object_r:vendor_dolby_data_file:s0
 
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.sony-libperfmgr  u:object_r:hal_power_default_exec:s0
+
+/(system/vendor|vendor)/bin/hw/vendor\.dolby\.media\.c2@1\.0-service       u:object_r:mediacodec_exec:s0
+/vendor/bin/hw/vendor\.qti\.media\.c2audio@1\.0-service          u:object_r:mediacodec_exec:s0
