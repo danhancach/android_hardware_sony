@@ -3,3 +3,7 @@ type sysfs_battchg_ext, fs_type, sysfs_type;
 type vendor_dolby_data_file, file_type, data_file_type;
 
 type vendor_sysfs_msm_subsys, fs_type, sysfs_type;
+
+type adspd, fs_type, sysfs_type;
+type init_hw, fs_type, sysfs_type;
+type moto_app, fs_type, sysfs_type;
