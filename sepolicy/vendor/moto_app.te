@@ -1,0 +1,2 @@
+allow moto_app vendor_audio_prop:file { read getattr map open };
+allow moto_app vendor_mot_dolby_prop:file { read getattr map open };

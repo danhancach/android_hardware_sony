@@ -54,7 +54,7 @@
             android:persistent="false">
             <intent
                  android:targetPackage="com.motorola.dolby.dolbyui"
-                 android:targetClass="com.motorola.dolby.dolbyui.MotoMainActivity" />
+                 android:targetClass="com.motorola.dolby.dolbyui.MainActivity" />
         </Preference>
     </PreferenceCategory>
 
