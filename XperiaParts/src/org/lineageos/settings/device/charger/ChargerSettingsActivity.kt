@@ -11,15 +11,18 @@ import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity
 import org.lineageos.settings.device.R
 
 class ChargerSettingsActivity : CollapsingToolbarBaseActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        fragmentManager
-                .beginTransaction()
-                .replace(R.id.content_frame, ChargerSettingsFragment(), TAG)
+
+        if (savedInstanceState == null) {
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.content_frame, ChargerSettingsFragment())
                 .commit()
+        }
     }
 
     companion object {
-        private const val TAG = "AdvancedChargerSettingsActivity"
+        private const val TAG = "ChargerSettingsActivity"
     }
 }
