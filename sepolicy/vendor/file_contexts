@@ -1,3 +1,5 @@
 /(vendor|system/vendor|odm|vendor/odm)/bin/hw/vendor\.sony\.charger-service                  u:object_r:hal_sony_charger_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.sony-libperfmgr  u:object_r:hal_power_default_exec:s0
 /vendor/bin/sendhint                                                              u:object_r:sendhint_vendor_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@[0-9]\.0-service	  u:object_r:hal_vendor_dms_default_exec:s0
+/data/vendor/dolby(/.*)?		u:object_r:vendor_dms_data_file:s0

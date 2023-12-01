@@ -2,3 +2,7 @@ attribute hal_sony_charger;
 attribute hal_sony_charger_client;
 attribute hal_sony_charger_server;
 attribute vendor_service;
+
+attribute hal_vendor_dms;
+attribute hal_vendor_dms_client;
+attribute hal_vendor_dms_server;

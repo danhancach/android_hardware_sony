@@ -1,0 +1,2 @@
+allow mediacodec hal_vendor_dms_hwservice:hwservice_manager find;
+binder_call(mediacodec, hal_vendor_dms_default)
