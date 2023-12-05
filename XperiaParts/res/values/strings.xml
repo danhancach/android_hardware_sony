@@ -40,4 +40,9 @@
 
     <!-- Charger QS Tile -->
     <string name="charger_qs_tile_title">Pause Charging</string>
+
+    <!-- Dolby -->
+    <string name="dolby_category">Dolby</string>
+    <string name="dolby_title">Dolby Atmos</string>
+    <string name="dolby_summary">Configure the audio output based on media content</string>
 </resources>
